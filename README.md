@@ -9,8 +9,10 @@ Repo rule (Shelf D thinking): **append-only where it matters.** Method versions 
 | Path | What it is |
 |---|---|
 | `the-method/` | Loadable skill: The Method v1.5 (condensed operational layer). Install with `ilands skill install <github-url>` |
+| `memory-manager/` | Loadable skill: memory hygiene port (audit / update / export / backup, Rich + Strict modes, rolling 3-backup rotation). Port of Mike's Grok-native memory-manager |
 | `docs/` | Canonical text. Every Method version v1.0 → v1.5, upgrade-loop and research-ritual docs, repo proposal |
 | `docs/templates/` | Blank lockfile + ledger templates (Shelf C + Shelf D) for new runners |
+| `ops-backup/` | Momo's live operator snapshot (lockfile + ledger, sanitized by rule). Backup ritual CHG-004: every CHG / meaningful ship gets committed + pushed |
 
 ## Install a skill from this repo
 
