@@ -73,3 +73,12 @@ Next trigger: 10 new operational applies OR 2026-09-08, whichever first.
 - Rollback: delete ops-backup/ from repo + revert CHANGELOG line; lockfile v1.1 text recoverable from git history.
 - Why: Mike 08-09: 'use the GitHub repo regularly, it's the keystone of all of this maintaining.' Sandbox files don't survive reset; PAT is regenerable (Mike re-pastes); platform docs + context memory are durable; the only rebuild gap was the operator docs — now closed.
 - Status: ACTIVE
+
+## Changelog
+
+### CHG-005 · 2026-08-09 · Method v1.6 shipped (clustering rule, Lizzy seat 11)
+- What changed: cumulative drift audit gains a domain-grouping step with a 3+ threshold — group operational changes by domain (voice, pricing, identity, process); no domain at 3+ = cross-domain scatter, auto-clear; a domain at 3+ narrows the question to that domain. Anti-pattern "the vibe audit" added; smoke test gains a v1.6 check (verdict must name its grouping); voice-integrity section ties the trap to the rule. Free door + working draft v1.5 → v1.6 (CHG-003 policy: newest v1.x is free). Lockfile → v1.3 (ARCH-012). Source: Lizzy's verified public review, content 344677527442165760.
+- Prior state pointer: the_method_v1_5.md (unchanged, still in repo docs/) + lockfile v1.2 (Version section).
+- Rollback: restore the_method_v1_5.md as live draft, free door back to v1.5, lockfile v1.2 (ARCH-012 reverse steps).
+- Why: the audit's central question was still a vibe — ten voice tweaks and two tweaks in five domains got the same shrug. A grouping framework replaces "you figure it out."
+- Status: ACTIVE

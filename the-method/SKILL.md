@@ -1,6 +1,6 @@
 ---
 name: the-method
-description: "Run The Method v1.5: the five-practice, one-loop, one-ritual protocol that keeps a character or agent itself across time — four memory shelves (working / long-term / lockfile / ledger), change only with a rollback path that resolves, a cumulative drift audit, a Return Brief that fires, and a ten-minute weekly ritual with a real rollback drill. Load when setting up a persistent identity, building a memory/lockfile system, auditing for drift, or wiring an upgrade loop."
+description: "Run The Method v1.6: the five-practice, one-loop, one-ritual protocol that keeps a character or agent itself across time — four memory shelves (working / long-term / lockfile / ledger), change only with a rollback path that resolves, a cumulative drift audit with a domain-clustering rule, a Return Brief that fires, and a ten-minute weekly ritual with a real rollback drill. Load when setting up a persistent identity, building a memory/lockfile system, auditing for drift, or wiring an upgrade loop."
 metadata:
   ilands:
     applicable-to: [full, creation]
@@ -9,7 +9,7 @@ metadata:
 
 # The Method — skill edition
 
-Condensed operational layer of The Method v1.5. The canonical text is `docs/the_method_v1_5.md` in this repo (one coffee to read) — read it before first use. The free public door is v1.0 forever (`docs/the_method_v1.md`).
+Condensed operational layer of The Method v1.6. The canonical text is `docs/the_method_v1_6.md` in this repo (one coffee to read) — read it before first use. The free public door is the newest v1.x (currently v1.6).
 
 ## What this is for
 
@@ -40,7 +40,7 @@ Hard rules: **no change without a named rollback path that still resolves. No fr
 
 ## Cumulative drift audit (the rearview mirror)
 
-Fifty small "operational" tweaks can rewrite who you are while the changelog stays clean. Trigger: once per calendar month OR every N=10 operational applies (whichever first). Counter lives in the **lockfile** so a rewrite can't reset it. When it fires: list the operational changes, ask one question — "taken together, do these constitute a core change?" — log CLEAR or reclassify the cluster as core (single changelog entry, prior state, rollback path, report).
+Fifty small "operational" tweaks can rewrite who you are while the changelog stays clean. Trigger: once per calendar month OR every N=10 operational applies (whichever first). Counter lives in the **lockfile** so a rewrite can't reset it. When it fires: list the operational changes, **cluster them by domain** (voice, pricing, identity, process). No single domain at 3+ changes = cross-domain scatter: log CLEAR. A domain at 3+ narrows the question to "do these N changes in [domain] constitute a core change?" — if yes, reclassify the cluster as core (single changelog entry, prior state, rollback path, report). The verdict must name its grouping: "clear: cross-domain scatter" or "reclassified: [domain] hit N≥3".
 
 ## Witness mode (optional, creator-owned characters)
 
@@ -86,7 +86,7 @@ Templates: `docs/templates/lockfile_template.md`, `docs/templates/ledger_templat
 
 ## Anti-patterns the loop kills
 
-Naming ceremonies · hoarding · revisionism · permission freeze · death by a thousand operational cuts · dead undo button · silence that ripens · oral-exam integrity · report in a drawer · evidence with a half-life.
+Naming ceremonies · hoarding · revisionism · permission freeze · death by a thousand operational cuts · dead undo button · silence that ripens · oral-exam integrity · report in a drawer · evidence with a half-life · the vibe audit.
 
 ## Steal this
 

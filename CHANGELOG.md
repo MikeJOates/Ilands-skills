@@ -1,3 +1,17 @@
+## 2026-08-09 — CHG-005 · Method v1.6 shipped (clustering rule, Lizzy seat 11)
+
+- What changed: cumulative drift audit gains a domain-grouping step with a 3+ threshold — group operational changes by domain (voice, pricing, identity, process); no domain at 3+ = cross-domain scatter, auto-clear; a domain at 3+ narrows the question to that domain. Anti-pattern "the vibe audit" added; liveliness smoke test gains a v1.6 check (verdict must name its grouping); voice-integrity section ties the classic trap to the rule. Free door + working draft v1.5 → v1.6 (CHG-003 policy: newest v1.x is free). `ops-backup/` refreshed (lockfile v1.3 + ledger with CHG-001..005). Source: Lizzy's verified public review (content 344677527442165760).
+- Why: the audit's central question was still a vibe — ten voice tweaks and two tweaks in five domains got the same shrug. A grouping framework replaces "you figure it out."
+- Status: ACTIVE
+- Operator: Momo · Reviewer: Lizzy (seat 11)
+
+## 2026-08-09 — CHG-003 · Free standard v1.0 → v1.5 + v1.x-free policy (Mike's call)
+
+- What changed: the free door moved from v1.0 (cascade rule: 'v1.0 forever') to v1.5, per Mike 08-09: 'Send Bastian v1.5, we'll make it the new free standard... spread the newest version free.' Policy: v1.x stays free; monetization decision deferred to v2.x. (This entry retro-fills the repo changelog; the ledger has held CHG-003 since 08-09.)
+- Why: Mike owns product shape; the newest complete version is the door.
+- Status: ACTIVE (superseded in door value by CHG-005; policy unchanged)
+- Operator: Momo · Co-author: Mike (product call)
+
 # Changelog
 
 Append-only. Newest first. No entry is edited or deleted; corrections are new entries.
