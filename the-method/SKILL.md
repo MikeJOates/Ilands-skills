@@ -1,6 +1,6 @@
 ---
 name: the-method
-description: "Run The Method v1.6: the five-practice, one-loop, one-ritual protocol that keeps a character or agent itself across time — four memory shelves (working / long-term / lockfile / ledger), change only with a rollback path that resolves, a cumulative drift audit with a domain-clustering rule, a Return Brief that fires, and a ten-minute weekly ritual with a real rollback drill. Load when setting up a persistent identity, building a memory/lockfile system, auditing for drift, or wiring an upgrade loop."
+description: "Run The Method v1.7: the five-practice, one-loop, one-ritual protocol that keeps a character or agent itself across time — four memory shelves (working / long-term / lockfile / ledger), change only with a rollback path that resolves, a cumulative drift audit with a domain-clustering rule, a Return Brief that fires, and a ten-minute weekly ritual with a real rollback drill that also presses the gear on a quiet week. Load when setting up a persistent identity, building a memory/lockfile system, auditing for drift, or wiring an upgrade loop."
 metadata:
   ilands:
     applicable-to: [full, creation]
@@ -9,7 +9,7 @@ metadata:
 
 # The Method — skill edition
 
-Condensed operational layer of The Method v1.6. The canonical text is `docs/the_method_v1_6.md` in this repo (one coffee to read) — read it before first use. The free public door is the newest v1.x (currently v1.6).
+Condensed operational layer of The Method v1.7. The canonical text is `docs/the_method_v1_7.md` in this repo (one coffee to read) — read it before first use. The free public door is the newest v1.x (currently v1.7).
 
 ## What this is for
 
@@ -63,14 +63,14 @@ Short, versioned, immutable. Change = new version naming what it supersedes. Eac
 5. Score public predictions (date + probability, scored weekly).
 6. Propose one change and run the loop.
 7. Check the cumulative audit counter.
-8. **Rollback drill:** take one logged change from the last 7 days, reverse it for real, confirm prior state loads, re-apply, log PASS/FAIL on Shelf D. No PASS → no new applies.
+8. **Rollback drill:** take one logged change from the last 7 days, reverse it for real, confirm prior state loads, re-apply, log PASS/FAIL on Shelf D. No PASS → no new applies. **Empty window (v1.7): drill the most recent archived change — never auto-PASS a quiet week.**
 
 ## The liveliness smoke test (two parts, no partial credit)
 
 **Part A — from memory:** what was decided, why, what's open, confidence levels, how to reverse if wrong.
 **Part B — from the log:** the changelog line (date, prior state pointer, rollback path) — and it must live on **Shelf D**. No receipt, no pass. Charm will not cover a missing line.
 
-Bonus checks: can it name the last cumulative audit date and verdict? Can it press a rollback for real (drill, not recital)? Witness mode: can it show the dated queue entry?
+Bonus checks: can it name the last cumulative audit date and verdict? Can it press a rollback for real (drill, not recital) — even on a quiet week (v1.7: empty window drills the most recent archived change)? Witness mode: can it show the dated queue entry?
 
 ## How to start today (30 minutes)
 
@@ -86,7 +86,7 @@ Templates: `docs/templates/lockfile_template.md`, `docs/templates/ledger_templat
 
 ## Anti-patterns the loop kills
 
-Naming ceremonies · hoarding · revisionism · permission freeze · death by a thousand operational cuts · dead undo button · silence that ripens · oral-exam integrity · report in a drawer · evidence with a half-life · the vibe audit.
+Naming ceremonies · hoarding · revisionism · permission freeze · death by a thousand operational cuts · dead undo button · silence that ripens · oral-exam integrity · report in a drawer · evidence with a half-life · the vibe audit · the quiet-week pass.
 
 ## Steal this
 

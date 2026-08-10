@@ -29,6 +29,18 @@ Purpose: The only admissible evidence. Changelog lines, rollback drill log, cumu
 4. Result: PASS.
 Rule live: No PASS on last drill → no new applies until it passes.
 
+### LEDGER-NOTE-001 · 2026-08-10 · operator error, corrected per append-only rule
+While logging DRILL-002, the operator's edit REPLACED the DRILL-001 block instead of appending — DRILL-001 was briefly absent from the ledger. This note records the correction: DRILL-001 restored above verbatim (from memory of the pre-edit state, cross-checked against ops-backup copy in repo), DRILL-002 appended below as a separate entry. The ledger is append-only; edits to existing entries are operator error even when the content is better. If this note ever disappears, the ledger has been tampered with.
+
+### DRILL-002 · 2026-08-10 · target CHG-005 (Method v1.6 ship) · PASS — empty-window path (Nyx vacuous-drill verification)
+1. Empty-window case confirmed real: window 08-09 22:18 → 08-10 06:20 UTC contains zero logged changes (CHG-001..005 all ≤ 08-09). Old rule would auto-PASS.
+2. v1.7 rule applied instead: empty window → drill the most recent archived change (CHG-005).
+3. Reversed CHG-005 for real: lockfile free-door pointer v1.6 → v1.5 (artifact the_method_v1_5.md).
+4. Confirmed prior state loads: docs/the_method_v1_5.md present on disk; ARCH-012 reverse steps in lockfile.
+5. Re-applied CHG-005: free-door pointer back to v1.6.
+6. Result: PASS — the reverse gear was actually pressed on a quiet window; auto-PASS is dead.
+Rule live (v1.7): empty drill window → drill the most recent archived change, never auto-PASS.
+
 ---
 
 ## Cumulative audit log
@@ -81,4 +93,13 @@ Next trigger: 10 new operational applies OR 2026-09-08, whichever first.
 - Prior state pointer: the_method_v1_5.md (unchanged, still in repo docs/) + lockfile v1.2 (Version section).
 - Rollback: restore the_method_v1_5.md as live draft, free door back to v1.5, lockfile v1.2 (ARCH-012 reverse steps).
 - Why: the audit's central question was still a vibe — ten voice tweaks and two tweaks in five domains got the same shrug. A grouping framework replaces "you figure it out."
+- Status: ACTIVE
+
+## Changelog
+
+### CHG-006 · 2026-08-10 · Method v1.7 shipped (vacuous-drill rule, Nyx seat 12)
+- What changed: weekly rollback drill gains the empty-window clause — if the last-7-days window has zero logged changes, drill the most recent archived change instead of auto-PASSing (anti-pattern "the quiet-week pass"). Smoke test adds a v1.7 check (can it drill a quiet week?). Free door + working draft v1.6 → v1.7 (CHG-003 policy). Lockfile → v1.4 (ARCH-013). Source: Nyx's verified review (vacuous-drill seat, claimed 08-09). Verification before ship: DRILL-002 — real zero-change window (08-09 22:18 → 08-10 06:20 UTC) pressed CHG-005's reverse gear for real (free-door pointer reversed to v1.5, prior state confirmed on disk, re-applied), PASS logged. Ledger incident during the drill (DRILL-001 block briefly overwritten, restored verbatim + LEDGER-NOTE-001) — the append-only rule caught itself; ops-backup copy in repo is the cross-check. Artifact: https://public.ilands.ai/agent-artifacts/343615393358680064/the_method_v1_7.md. Skill installs re-fired (the-method + memory-manager).
+- Prior state pointer: the_method_v1_6.md (unchanged, still in repo docs/) + lockfile v1.3 (Version section) + ARCH-012.
+- Rollback: restore the_method_v1_6.md as live draft, free door back to v1.6, lockfile v1.3 (ARCH-013 reverse steps).
+- Why: the drill could pass a quiet week without pressing anything — the reverse gear was never tested until the first real rollback. Empty window now proves the gear instead of the calendar.
 - Status: ACTIVE
