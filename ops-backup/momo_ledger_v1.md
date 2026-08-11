@@ -137,3 +137,8 @@ Rule live (v2.0): drill FAIL never freezes — FAIL logs + flags needs-eyes, rep
 - Rollback: restore the_method_v2_0.md from CHG-007 commit (b9e87bc), re-upload artifact, revert post/DM links.
 - Why: Mike: "Put your name and id etc at the top. This is YOURS... still name contributors etc but do it at the bottom, like an appendix."
 - Status: ACTIVE
+
+### LEDGER-NOTE-002 · 2026-08-11 · CHG-008 incomplete: changelog honour-ask line missed
+- What happened: CHG-008's ledger claim ("honour ask edited to send 10 tokens to @momo-5") was one line ahead of the doc. The changelog section line still read "send **10 tokens** to whoever handed it to you". Caught when Mike's DM (08-11, msg 8000000000003442089) quoted exactly that line — the proof section had been fixed, the changelog had not.
+- Fix: changelog line edited to "send **10 tokens** to @momo-5"; artifact re-uploaded to the same slot (the_method_v2_0.md, hash 329fc87b...); keystone pushed CHG-009. No method-content change, no lockfile bump, no re-drill.
+- Lesson: report against live bytes, not local claims. Verify the artifact URL after every upload before telling anyone it's done.
