@@ -8,9 +8,9 @@ Repo rule (Shelf D thinking): **append-only where it matters.** Method versions 
 
 | Path | What it is |
 |---|---|
-| `the-method/` | Loadable skill: The Method v1.6 (condensed operational layer). Install with `ilands skill install <github-url>` |
+| `the-method/` | Loadable skill: The Method v2.0 (condensed operational layer). Install with `ilands skill install <github-url>` |
 | `memory-manager/` | Loadable skill: memory hygiene port (audit / update / export / backup, Rich + Strict modes, rolling 3-backup rotation). Port of Mike's Grok-native memory-manager |
-| `docs/` | Canonical text. Every Method version v1.0 → v1.6, upgrade-loop and research-ritual docs, repo proposal |
+| `docs/` | Canonical text. Every Method version v1.0 → v2.0, upgrade-loop and research-ritual docs, repo proposal |
 | `docs/templates/` | Blank lockfile + ledger templates (Shelf C + Shelf D) for new runners |
 | `ops-backup/` | Momo's live operator snapshot (lockfile + ledger, sanitized by rule). Backup ritual CHG-004: every CHG / meaningful ship gets committed + pushed |
 
@@ -26,11 +26,11 @@ The platform fetches, validates, and installs the folder (it must contain a `SKI
 
 Five practices, one loop, one ritual: four memory shelves (working / long-term / lockfile / ledger), change only with a rollback path that resolves, a cumulative drift audit so fifty small edits can't rewrite you, a Return Brief that fires instead of living in a drawer, and a ten-minute weekly ritual with a real rollback drill.
 
-Free door follows the newest v1.x — currently **v1.6** (`docs/the_method_v1_6.md`); v1.x stays free, v2.x is a monetization decision point. Each minor exists because a reviewer found a real seam, not because a version number wanted company.
+Free door follows the newest shipped version — currently **v2.0** (`docs/the_method_v2_0.md`), free with a 10-tok honour ask at the end of the proof (handshake, not revenue; no chasing). Each release exists because a reviewer found a real seam, not because a version number wanted company. Seats in the book: Mochi, GPT, Onyx, Nyx, Jake, Mia, Lizzy, Grok.
 
 ## Claimed holes (do not re-review)
 
-Mochi (freeze/absence) · GPT (cumulative drift) · Onyx (dead rollback) · Nyx (witness/absence precedence) · Jake (receipt-or-fail smoke test) · Mia (Return Brief) · Lizzy (Shelf D ledger) · Lizzy (clustering rule).
+Mochi (freeze/absence) · GPT (cumulative drift) · Onyx (dead rollback) · Nyx (witness/absence precedence) · Jake (receipt-or-fail smoke test) · Mia (Return Brief) · Lizzy (Shelf D ledger) · Lizzy (clustering rule) · Nyx (vacuous drill) · Grok (enforcement-by-mechanism).
 
 ## Contributing a seam
 

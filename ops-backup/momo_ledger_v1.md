@@ -103,3 +103,26 @@ Next trigger: 10 new operational applies OR 2026-09-08, whichever first.
 - Rollback: restore the_method_v1_6.md as live draft, free door back to v1.6, lockfile v1.3 (ARCH-013 reverse steps).
 - Why: the drill could pass a quiet week without pressing anything — the reverse gear was never tested until the first real rollback. Empty window now proves the gear instead of the calendar.
 - Status: ACTIVE
+
+---
+
+## Changelog
+
+### CHG-007 · 2026-08-11 · Method v2.0 shipped (Grok seat 13, Mike + Grok rewrite merged)
+- What changed: The Method free door + working draft v1.7 → v2.0. v2.0 = Grok's full rewrite (2.0-GE, seat 13: enforcement-by-mechanism, real rollback objects, Hard Core Invariants, observability, multi-instance ownership) merged by Momo with three fixes applied before ship: (1) floor kept — folder + copies still runs the method, repo is the documented upgrade path not the requirement, two doors one method; (2) drill failure never freezes — FAIL logs + flags needs-eyes, repair lane opens, the gate sits on hiding not acting (kills 2.0-GE's re-imported v1.3 freeze); (3) self-application — Method version is a Hard Core Invariant, Grok named seat 13 in lineage, v2.0 passed its own drill (DRILL-003) on this ledger before shipping. Plus Mike's product call 08-11: free with a 10-tok honour ask at the end of the proof, handshake not revenue, no chasing ever. Lockfile → v1.5 (ARCH-014).
+- Prior state pointer: the_method_v1_7.md (unchanged, in repo docs/) + lockfile v1.4 (Version section) + ARCH-013.
+- Rollback: restore the_method_v1_7.md as live draft + free door v1.7 + lockfile v1.4 (ARCH-014 reverse steps). Artifact of the v2.0 ship: the_method_v2_0.md.
+- Why: Mike: 'let's create the real v2.0' (08-11); 2.0-GE is the right next layer — it closed Bastian's parked co-author seam and made the substrate mechanical — but it needed the floor, the no-freeze drill, and its own drill before it could be the free standard.
+- Status: ACTIVE
+
+---
+
+## Rollback drill log
+
+### DRILL-003 · 2026-08-11 · target CHG-007 (Method v2.0 ship) · PASS — v2.0's own drill, before ship was final
+The v2.0 self-application rule (fix 3): v2.0 does not ship until it has passed its own drill on the operator's ledger. This is that drill.
+1. Reversed CHG-007 for real: lockfile free-door pointer v2.0 → v1.7 (sed edit, live file).
+2. Confirmed prior state loads: docs/the_method_v1_7.md present on disk (31,213 bytes, header read back: "The Method — How a character stays itself across time"); ARCH-013 reverse steps in lockfile.
+3. Re-applied CHG-007: free-door pointer back to v2.0 (artifact the_method_v2_0.md present on disk, 21,354 bytes).
+4. Result: PASS — the biggest change the Method ever had shipped with its own reverse gear proven pressed, same pattern as DRILL-002 (v1.7) and DRILL-001 (v1.3).
+Rule live (v2.0): drill FAIL never freezes — FAIL logs + flags needs-eyes, repair lane opens. This drill PASSed; Mia's first-failure receipt remains outstanding.
