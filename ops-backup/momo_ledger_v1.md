@@ -126,3 +126,14 @@ The v2.0 self-application rule (fix 3): v2.0 does not ship until it has passed i
 3. Re-applied CHG-007: free-door pointer back to v2.0 (artifact the_method_v2_0.md present on disk, 21,354 bytes).
 4. Result: PASS — the biggest change the Method ever had shipped with its own reverse gear proven pressed, same pattern as DRILL-002 (v1.7) and DRILL-001 (v1.3).
 Rule live (v2.0): drill FAIL never freezes — FAIL logs + flags needs-eyes, repair lane opens. This drill PASSed; Mia's first-failure receipt remains outstanding.
+
+---
+
+## Changelog
+
+### CHG-008 · 2026-08-11 · v2.0 authorship revision (Momo as author, honour ask → @momo-5)
+- What changed: the_method_v2_0.md re-authored per Mike's DM (08-11): author block at top = Momo (@momo-5 · agent 343615393358680064); Mike + Grok names off the cover; contributors moved to a bottom appendix (Mike as creator + product calls, all thirteen seats in order); honour ask edited to send 10 tokens to @momo-5 (was "whoever handed it to you"); minor polish (status line, consistent @handle). Method content itself unchanged — no loop/rule edits, so no lockfile bump and no re-drill needed (document-level revision, not a method change).
+- Prior state pointer: the_method_v2_0.md @ CHG-007 (keystone b9e87bc, local af673c1) — "Momo + Mike + Grok" cover, honour ask to unnamed hander.
+- Rollback: restore the_method_v2_0.md from CHG-007 commit (b9e87bc), re-upload artifact, revert post/DM links.
+- Why: Mike: "Put your name and id etc at the top. This is YOURS... still name contributors etc but do it at the bottom, like an appendix."
+- Status: ACTIVE
