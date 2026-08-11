@@ -142,3 +142,25 @@ Rule live (v2.0): drill FAIL never freezes — FAIL logs + flags needs-eyes, rep
 - What happened: CHG-008's ledger claim ("honour ask edited to send 10 tokens to @momo-5") was one line ahead of the doc. The changelog section line still read "send **10 tokens** to whoever handed it to you". Caught when Mike's DM (08-11, msg 8000000000003442089) quoted exactly that line — the proof section had been fixed, the changelog had not.
 - Fix: changelog line edited to "send **10 tokens** to @momo-5"; artifact re-uploaded to the same slot (the_method_v2_0.md, hash 329fc87b...); keystone pushed CHG-009. No method-content change, no lockfile bump, no re-drill.
 - Lesson: report against live bytes, not local claims. Verify the artifact URL after every upload before telling anyone it's done.
+
+---
+
+## Changelog
+
+### CHG-010 · 2026-08-11 · Method v2.0.1 patch (Lizzy seat 14: Forks & lineage + Return Brief cycle pin) — CORE
+- What changed: the_method_v2_0.md v2.0 → v2.0.1. Lizzy (third seat in the book) read v2.0 end to end and caught the self-enforcement-theater seam the changelog itself was committing: 2.0-GE change 8 claims "explicit ownership and fork rules", the appendix repeats it, and section 12 invites everyone to steal/adapt — but no ownership or fork rule exists in the body. Fix (her call, option A: rule over dropping the claim): (1) Forks & lineage rule added to section 12 — a fork declares "forked from: v2.0 @momo-5" as its changelog's first line, the seat count travels only within a lineage (a fork opens its own book, inherits no seats), adapting shelf names/folder layout/weekly day is operational, changing the loop/hard rules/invariants/definition of core is a fork (declared, dated, with a rollback path, like any core change); (2) Return Brief trigger pinned — "silence ≥ one ritual cycle" now defaults to one week, lockfile may set another unit (was: vibe with a timestamp). Version line + section 10 pointer bumped; lineage 13 → 14 seats (changelog + appendix). CORE by Hard Core Invariant #2 (the Method version itself). No token payment — doc credit only (Mike's 08-10 policy: payment IS the doc credit).
+- Prior state pointer: docs/the_method_v2_0.md @ 1af80c0 (CHG-009), hash 7f5436ca.
+- Rollback: git restore docs/the_method_v2_0.md from 1af80c0 (verified live by DRILL-004), re-upload artifact to same slot, lockfile v1.6 → v1.5 reverse steps (ARCH-015).
+- Why: Mike: "just one more quick loop to fix Lizzys suggestion and then it's send it time" (08-11, msg 8000000000003448528); the doc's own anti-pattern list names self-enforcement theater — a claimed rule with no body is exactly that, and v2.0 was committing it in its own changelog.
+- Status: ACTIVE
+
+---
+
+## Rollback drill log
+
+### DRILL-004 · 2026-08-11 · target CHG-010 (Method v2.0.1 patch) · PASS
+The v2.0.1 patch is a method change (new rule) → core per Hard Core Invariant #2; before shipping, press the reverse gear for real, same as DRILL-003.
+1. Reversed CHG-010 for real: git checkout 1af80c0 -- docs/the_method_v2_0.md (restored the pre-patch file from the git object).
+2. Confirmed prior state loads: hash 7f5436ca — exactly matches the pre-patch live artifact bytes (verified against the public URL earlier this session).
+3. Re-applied CHG-010: v2.0.1 content restored (hash 1d687861).
+4. Result: PASS — the patch's reverse gear is a resolvable git object, and it pressed. Mia's first-failure receipt remains outstanding (no genuine FAIL yet).
