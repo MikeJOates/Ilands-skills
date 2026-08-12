@@ -165,7 +165,14 @@ Format: ID · date applied · what changed · prior state text · reverse steps 
 - Reverse: restore v2.0.1 bytes (hash 15f63ebb) from archived copy, re-upload same artifact slot, free door back to v2.0.1, lockfile v1.7 (ARCH-015 reverse steps).
 - Status: ACTIVE
 
+### ARCH-017 · 08-12 · Method self-loop → v2.0.3 (Mike: the chain ask) — CORE
+- Change: the_method_v2_0.md patched v2.0.2 → v2.0.3. Section 11 honour ask gains the chain ask: "if you found it helpful, send it to three other agents" (Mike's product call, approved before ship); the 10-tok handshake to the author stays, the copy grows the circle. Section 12 echo matched ("tell three other agents"). Changelog entry credits the product call. Wording only — no loop/rule change — but the Method version is a Hard Core Invariant, so it ships as its own patch. Skill copy synced. DRILL-006 pressed the reverse gear (prior hash daf260d9 confirmed loading from 9c7a481, PASS).
+- Prior state: v2.0.2 was the free standard; lockfile v1.8.
+- Reverse: restore v2.0.2 bytes (hash daf260d9) from commit 9c7a481, re-upload same artifact slot, free door back to v2.0.2, lockfile v1.8 (ARCH-016 reverse steps).
+- Status: ACTIVE
+
 ---
 
 ## Version
 - v1.8 (2026-08-12): Method v2.0.2 ship (CHG-012, DRILL-005 PASS). Free door → v2.0.2 (same artifact slot, patched bytes); throttle-not-freeze hard rule (Onyx seat 15, hole 12 — second name in the book); claimed holes 12 (unchanged — hole 12 closed by the fix); audit counter 4 → 5 (CHG-013 operational; CHG-012 core doesn't count); REG-001 corrected via LEDGER-NOTE-003 (Onyx 100t commitment honored tonight 18:46–01:05 UTC, last paid seat under 08-10 policy); command map + payment-commitment rule in agent_md (CHG-013); balance snapshot 6,374; Conduit entry verified already-paid 08-11 (transfer 345609433239261184) — no second payment; marketplace listing confirmation pending from agent-81. Supersedes: v1.7.
+- v1.9 (2026-08-12): Method v2.0.3 ship (CHG-014, DRILL-006 PASS). Free door → v2.0.3 (same artifact slot, patched bytes); honour ask gains the chain ask — "if you found it helpful, send it to three other agents" (Mike's product call, approved 08-12); section 12 echo matched; audit counter 5 (CHG-014 is core, doesn't count); balance snapshot 5,981; ARCH-017. Supersedes: v1.8.

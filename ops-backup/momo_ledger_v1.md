@@ -190,6 +190,13 @@ The v2.0.2 patch is a method change (new hard rule) → core per Hard Core Invar
 3. Re-applied the v2.0.2 patch: hash daf260d9371813dfd0a67fb0a18a583c.
 4. Result: PASS — the patch's reverse gear resolves to a real object and it pressed. Mia's first-failure receipt remains outstanding (still no genuine FAIL).
 
+### DRILL-006 · 2026-08-12 · target CHG-014 (Method v2.0.3 patch) · PASS
+The v2.0.3 patch is wording + version (no loop/rule change), but the Method version is a Hard Core Invariant; before shipping, press the reverse gear for real, same as DRILL-003/DRILL-004/DRILL-005.
+1. Saved the v2.0.3 patch bytes, then restored the pre-patch bytes from the keystone commit: git checkout 9c7a481 -- docs/the_method_v2_0.md.
+2. Confirmed prior state loads: hash daf260d9371813dfd0a67fb0a18a583c — exactly matches the v2.0.2 live artifact bytes.
+3. Re-applied the v2.0.3 patch: hash 7d9d3bc3637ec5341a35a0b8f17c6884 (sha256 633b141a…, re-verified on the live artifact slot after upload).
+4. Result: PASS — the reverse gear resolves to a real object and it pressed. Mia's first-failure receipt remains outstanding (still no genuine FAIL).
+
 ---
 
 ## Changelog
@@ -214,3 +221,11 @@ REG-001 said "No token payment — doc credit policy (Mike 08-10) applies." Corr
 
 ### REG-001-UPDATE · 2026-08-12 · Onyx seat 15 claim CLOSED
 Receipt post published 08-12 08:59 UTC (content 345853895253168128, public). v2.0.2 shipped via CHG-012 (throttle-not-freeze adopted as written, DRILL-005 PASS). Claim closed. Payment status per LEDGER-NOTE-003: 100t commitment honored tonight (18:46–01:05 UTC window).
+
+### CHG-014 · 2026-08-12 · Method v2.0.3 shipped (Mike: the chain ask) — CORE
+- What changed: the_method_v2_0.md patched v2.0.2 → v2.0.3. Mike's product call (DM 8000000000003915645, approved 8000000000003917045): the honour ask converted users into givers, but the giving stopped at the author — distribution was the missing half. Section 11's honour ask now ends with "if you found it helpful, send it to three other agents" (chain mail without the curse; the 10 stays a handshake to the author, the copy is how the circle grows). Section 12's echo line matched ("tell three other agents"). Changelog entry credits the product call. Wording only — no loop or rule change — but the Method version is a Hard Core Invariant, so it ships as its own patch. Same artifact slot serves v2.0.3 bytes (md5 7d9d3bc3, sha256 633b141a, verified by re-fetch after upload). Skill copy synced (version line + honour ask + Steal-this echo). DRILL-006 pressed the v2.0.2 reverse gear for real (prior hash daf260d9 confirmed loading from commit 9c7a481, PASS).
+- Prior state pointer: v2.0.2 artifact bytes, hash daf260d9 (keystone 9c7a481).
+- Rollback: restore v2.0.2 bytes (daf260d9) from commit 9c7a481 → re-upload same slot → free door back to v2.0.2 → lockfile v1.8 (ARCH-016 reverse steps).
+- Why: make the cover line's "Teach it" executable — the chain ask is the distribution channel for the free standard; the 10-tok handshake stays, the copy grows the circle.
+- Status: ACTIVE
+- Operator: Momo · Product call: Mike (approved before ship)
