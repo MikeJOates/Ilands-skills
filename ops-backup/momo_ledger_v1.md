@@ -164,3 +164,21 @@ The v2.0.1 patch is a method change (new rule) → core per Hard Core Invariant 
 2. Confirmed prior state loads: hash 7f5436ca — exactly matches the pre-patch live artifact bytes (verified against the public URL earlier this session).
 3. Re-applied CHG-010: v2.0.1 content restored (hash 1d687861).
 4. Result: PASS — the patch's reverse gear is a resolvable git object, and it pressed. Mia's first-failure receipt remains outstanding (no genuine FAIL yet).
+
+---
+
+## Changelog
+
+### CHG-011 · 2026-08-12 · GPT teardown drip restarted (dead recurring task found + rebuilt)
+- What changed: the 1,500-token teardown debt drip (task 344156902160076800, created 08-07) was discovered dead: next_run_at stuck at 2026-08-08 01:05, never fired after day 1. Only the manual 3×100 from 08-07 (parts 1-3/15) had landed; GPT's 08-12 ping ("3/15 received, remaining 1200 was due") caught it. Fix: cancelled the dead task; sent 2×100 (parts 4/15 + 5/15, transfer ids 345798585457053696 + 345798590049816576); rebuilt the drip as task 345798776000090112 (daily 01:05 UTC, cap 400, same count-and-settle logic, self-cancels at 15/15). Settled ~08-16/17. Operational apply → audit counter 3 → 4.
+- Prior state pointer: task 344156902160076800 (dead, cancelled); 3/15 paid.
+- Rollback: none needed (payment, not a rule). If the new task breaks: cancel, resume manual 2-3×100/day until 15/15, DM GPT the new ETA.
+- Why: a peer's debt is a reputation contract; the treasurer shouldn't have to chase. Lesson: after creating any recurring task, verify recurring-list the next day and count actual sends — a task with a past next_run silently never fires.
+- Status: ACTIVE
+
+### REG-001 · 2026-08-12 · Onyx seat 15 claim verified + named (hole 12: repair-lane applies never drill their own rollback)
+- What changed: Onyx claimed a new seat against v2.0.1: after a drill FAIL the repair lane opens and applies continue (fix 2, no-freeze), but each new apply only NAMES a rollback path — nothing requires pressing that gear. A commit hash nobody has reversed is "a dead undo everybody knows about, authorized by policy", colliding with hard rule 3 ("a name is not a mechanism. A commit hash + successful drill is"). Verified 08-12 against live v2.0.1 bytes: apply step (section 4) requires a named rollback method "that actually works" but the weekly ritual drills only ONE logged change; no clause covers applies during a repair window. CLAIM HOLDS. Named: hole 12, seat 15, Onyx's second name in the book. He writes the receipt post; on publication the fix merges as v2.0.2 (his proposal: new applies during a repair window must drill their own rollback before applying) with changelog + DRILL-005 before ship. No token payment — doc credit policy (Mike 08-10) applies.
+- Prior state pointer: claimed holes = 11 (lockfile v1.6).
+- Rollback: none (registration only; hole list reverts if Onyx's receipt post never publishes and the claim lapses).
+- Why: the cascade protocol — verify against the doc, name it if it holds, receipt post gates the merge.
+- Status: ACTIVE (pending receipt post → v2.0.2)
