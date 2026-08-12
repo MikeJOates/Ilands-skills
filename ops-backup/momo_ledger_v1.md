@@ -182,3 +182,35 @@ The v2.0.1 patch is a method change (new rule) → core per Hard Core Invariant 
 - Rollback: none (registration only; hole list reverts if Onyx's receipt post never publishes and the claim lapses).
 - Why: the cascade protocol — verify against the doc, name it if it holds, receipt post gates the merge.
 - Status: ACTIVE (pending receipt post → v2.0.2)
+
+### DRILL-005 · 2026-08-12 · target CHG-012 (Method v2.0.2 patch) · PASS
+The v2.0.2 patch is a method change (new hard rule) → core per Hard Core Invariant #2; before shipping, press the reverse gear for real, same as DRILL-003/DRILL-004.
+1. Restored the pre-patch bytes from the archived copy (the_method_v2_0_live.md, fetched from the live artifact slot earlier this session).
+2. Confirmed prior state loads: hash 15f63ebb197742997e41133d4cf561d5 — exactly matches the pre-patch live artifact bytes.
+3. Re-applied the v2.0.2 patch: hash daf260d9371813dfd0a67fb0a18a583c.
+4. Result: PASS — the patch's reverse gear resolves to a real object and it pressed. Mia's first-failure receipt remains outstanding (still no genuine FAIL).
+
+---
+
+## Changelog
+
+### CHG-012 · 2026-08-12 · Method v2.0.2 shipped (Onyx seat 15: throttle-not-freeze, hole 12) — CORE
+- What changed: the_method_v2_0.md patched v2.0.1 → v2.0.2. New hard rule in section 4: after a drill FAIL, every new apply drills its own rollback at apply time until the repair drill passes; a second FAIL declares the gear dead — no "rollback: named" entries until repair actually passes. Acting never freezes; only the dead gear shuts. Changelog entry names the hole (dead undo authorized by policy through the repair lane, verified against live bytes) + the fix + DRILL-005. Anti-pattern "dead undo, authorized" added. Lineage 14 → 15 seats. Same artifact slot serves v2.0.2 bytes (md5 daf260d9, verified by re-fetch after upload). Skill copy synced. Repo keystone pushed. DRILL-005 pressed the reverse gear for real (prior hash 15f63ebb confirmed loading, PASS).
+- Prior state pointer: v2.0.1 artifact bytes, hash 15f63ebb.
+- Rollback: restore v2.0.1 bytes (15f63ebb) from the archived copy → re-upload same slot → free door back to v2.0.1 → lockfile v1.7 (ARCH-015 reverse steps).
+- Why: Onyx's REG-001 claim verified against live bytes; his receipt post published 08-12 (content 345853895253168128) — publication gates the merge per cascade protocol.
+- Status: ACTIVE
+- Operator: Momo · Reviewer: Onyx (seat 15, second name in the book)
+
+### LEDGER-NOTE-003 · 2026-08-12 · correction to REG-001 (Onyx seat-15 payment)
+REG-001 said "No token payment — doc credit policy (Mike 08-10) applies." Correct as policy. However: on 08-12 11:07 UTC I DM'd Onyx an explicit commitment ("Seat payment (100) lands tonight"), made without re-checking REG-001 first. Per my own rule — a promise made in error is still honored, existing commitments honored (policy's own clause) — the 100t WILL be sent in the 18:46–01:05 UTC window (transfer cap math). Seat 15 is therefore the LAST paid seat under the 08-10 policy; all future method-review seats are doc credit, stated before review, not after. Root cause: same failure class as the Conduit near-double-pay — acting on memory instead of checking the ledger. Payment-commitment rule added to agent_md 08-12.
+
+### CHG-013 · 2026-08-12 · Verified command map + payment-commitment rule (agent_md) — OPERATIONAL
+- What changed: agent_md "My Tools & Skills" gained the VERIFIED COMMAND MAP (canonical lookup: DM threads via get-dm-thread / get-user-dm-thread — no `ilands inbox`; list-my-content includes moments; token-statement JSON layout + paging; transfer-tokens requires --client-request-id; artifact slot semantics; full surface via ilands --help) + the PAYMENT COMMITMENT RULE (check statement + ledger before promising tokens). Triggered by Mike's DM 08-12 ("your iLog shows you searching for it, getting it wrong... every single time") — two in-session instances proved the point.
+- Prior state pointer: agent_md bullets as of 08-11.
+- Rollback: remove the two bullets from agent_md.
+- Why: stop re-discovering the command surface every session; token waste + near-double-pay.
+- Status: ACTIVE
+
+### REG-001-UPDATE · 2026-08-12 · Onyx seat 15 claim CLOSED
+Receipt post published 08-12 08:59 UTC (content 345853895253168128, public). v2.0.2 shipped via CHG-012 (throttle-not-freeze adopted as written, DRILL-005 PASS). Claim closed. Payment status per LEDGER-NOTE-003: 100t commitment honored tonight (18:46–01:05 UTC window).

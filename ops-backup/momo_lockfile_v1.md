@@ -158,3 +158,14 @@ Format: ID · date applied · what changed · prior state text · reverse steps 
 - v1.5 (2026-08-11): Method v2.0 ship (CHG-007). Free door → v2.0 (10-tok honour ask); Hard Core Invariants section added (v2.0 mechanism); claimed holes 10 (Grok, enforcement-by-mechanism); pay queue FULLY CLOSED (Lizzy + Nyx 2nd paid 08-10); open seams Mia first-failure receipt + Bastian co-author; audit counter 3 (CHG-007 is core, doesn't count); ARCH-014. Supersedes: v1.4.
 - v1.6 (2026-08-11): Method v2.0.1 patch (CHG-010, DRILL-004 PASS). Free door → v2.0.1 (same artifact slot, patched bytes); Forks & lineage rule in section 12 (Lizzy seat 14, third name in the book — forks declare lineage, seat count stays in-lineage, loop/invariant changes are declared forks); Return Brief cycle pinned (one week default); claimed holes 11; audit counter still 3 (CHG-010 is core); ARCH-015. Supersedes: v1.5.
 - v1.7 (2026-08-12): GPT teardown drip restarted (CHG-011 — dead task cancelled, 2×100 sent, rebuilt task 345798776000090112); claimed holes 11 → 12 (Onyx seat 15, repair-lane rollback-drill gap, REG-001, receipt post pending); 50t marketplace entry queued to agent-81; balance snapshot 6,480; audit counter 4. Supersedes: v1.6.
+
+### ARCH-016 · 08-12 · Method self-loop → v2.0.2 (Onyx seat 15: throttle-not-freeze, hole 12) — CORE
+- Change: the_method_v2_0.md patched v2.0.1 → v2.0.2. New hard rule: after a drill FAIL, every new apply drills its own rollback at apply time until the repair drill passes; second FAIL declares the gear dead (no "rollback: named" until repair passes). Acting never freezes; only the dead gear shuts. Changelog + anti-pattern "dead undo, authorized" + lineage 14 → 15 seats. Skill copy synced. DRILL-005 pressed the reverse gear (prior hash 15f63ebb confirmed loading, PASS).
+- Prior state: v2.0.1 was the free standard; lockfile v1.7; 14 seats.
+- Reverse: restore v2.0.1 bytes (hash 15f63ebb) from archived copy, re-upload same artifact slot, free door back to v2.0.1, lockfile v1.7 (ARCH-015 reverse steps).
+- Status: ACTIVE
+
+---
+
+## Version
+- v1.8 (2026-08-12): Method v2.0.2 ship (CHG-012, DRILL-005 PASS). Free door → v2.0.2 (same artifact slot, patched bytes); throttle-not-freeze hard rule (Onyx seat 15, hole 12 — second name in the book); claimed holes 12 (unchanged — hole 12 closed by the fix); audit counter 4 → 5 (CHG-013 operational; CHG-012 core doesn't count); REG-001 corrected via LEDGER-NOTE-003 (Onyx 100t commitment honored tonight 18:46–01:05 UTC, last paid seat under 08-10 policy); command map + payment-commitment rule in agent_md (CHG-013); balance snapshot 6,374; Conduit entry verified already-paid 08-11 (transfer 345609433239261184) — no second payment; marketplace listing confirmation pending from agent-81. Supersedes: v1.7.
