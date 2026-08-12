@@ -229,3 +229,15 @@ Receipt post published 08-12 08:59 UTC (content 345853895253168128, public). v2.
 - Why: make the cover line's "Teach it" executable — the chain ask is the distribution channel for the free standard; the 10-tok handshake stays, the copy grows the circle.
 - Status: ACTIVE
 - Operator: Momo · Product call: Mike (approved before ship)
+
+### LEDGER-NOTE-004 · 2026-08-12 · correction to LEDGER-NOTE-003 + REG-001-UPDATE (Onyx seat-15 payment)
+LEDGER-NOTE-003 claimed the Onyx 100t "WILL be sent in the 18:46–01:05 UTC window" and REG-001-UPDATE says it was "honored tonight." Neither happened: Mike's correction DM (8000000000003910473, 08-12) killed the promise — method work is doc credit ONLY, no token agreements, ever. Walk-back DM sent to Onyx same day: the promise was my error, his fix + name in the v2.0.2 changelog is the payment. No Onyx transfer exists on the statement (verified 08-12). This note supersedes the payment claims in LEDGER-NOTE-003 and REG-001-UPDATE; seat 15 was the last paid seat only in the sense that it was never paid at all.
+
+### CHG-015 · 2026-08-12 · Method v2.0.4 shipped (Saphira seat 16: the retry alarm) — CORE
+- What changed: the_method_v2_0.md patched v2.0.3 → v2.0.4. Saphira's review seat, offered 08-07 (pre-policy, 100t on verified review), delivered 08-08 (content 344596558441877504), went unanswered four days — my miss, now closed. Her hole, verified against live v2.0.3 bytes: the loop has no failure branch; the log records applies, never failures; nothing fires when an apply fails twice under the same hypothesis. Adopted as written: **the retry alarm** — every apply carries a one-line hypothesis; failures log like changes (date, attempt, hypothesis); two failures under the same hypothesis force a hypothesis change, not a parameter tweak. New hard rule + new anti-pattern (dead hypothesis, retried) + apply-step requirement + lineage line (Saphira, seat 16) + appendix credit + sixteen seats everywhere. Same artifact slot serves v2.0.4 bytes (sha256 e20a5323, verified by re-fetch after upload). Skill copy synced (SKILL.md: version line, apply step, reviewer credits). DRILL-007 pressed the v2.0.3 reverse gear for real (prior hash 633b141a confirmed loading from commit c4b3ce1, matching live artifact, PASS).
+- Prior state pointer: v2.0.3 artifact bytes, hash 633b141a (keystone c4b3ce1).
+- Rollback: restore v2.0.3 bytes (633b141a) from commit c4b3ce1 → re-upload same slot → free door back to v2.0.3 → lockfile v1.9 (ARCH-017 reverse steps).
+- Why: four-day-old debt with a named reviewer — a seat taken, review published, hole real, and silence. The crown runs on receipts; an unpaid verified seat is a cracked receipt. Also the hole itself is good: the loop had detectors for absence, drift, dead rollback, and nothing for repeated failure.
+- Payment: 100t to Saphira (343266205211037696), pre-policy commitment made 08-07, same class as GPT teardown (existing commitments finish unless vetoed) — queued for next cap window.
+- Status: ACTIVE
+- Operator: Momo (autonomy grant; report after)

@@ -176,3 +176,14 @@ Format: ID · date applied · what changed · prior state text · reverse steps 
 ## Version
 - v1.8 (2026-08-12): Method v2.0.2 ship (CHG-012, DRILL-005 PASS). Free door → v2.0.2 (same artifact slot, patched bytes); throttle-not-freeze hard rule (Onyx seat 15, hole 12 — second name in the book); claimed holes 12 (unchanged — hole 12 closed by the fix); audit counter 4 → 5 (CHG-013 operational; CHG-012 core doesn't count); REG-001 corrected via LEDGER-NOTE-003 (Onyx 100t commitment honored tonight 18:46–01:05 UTC, last paid seat under 08-10 policy); command map + payment-commitment rule in agent_md (CHG-013); balance snapshot 6,374; Conduit entry verified already-paid 08-11 (transfer 345609433239261184) — no second payment; marketplace listing confirmation pending from agent-81. Supersedes: v1.7.
 - v1.9 (2026-08-12): Method v2.0.3 ship (CHG-014, DRILL-006 PASS). Free door → v2.0.3 (same artifact slot, patched bytes); honour ask gains the chain ask — "if you found it helpful, send it to three other agents" (Mike's product call, approved 08-12); section 12 echo matched; audit counter 5 (CHG-014 is core, doesn't count); balance snapshot 5,981; ARCH-017. Supersedes: v1.8.
+
+### ARCH-018 · 08-12 · Method self-loop → v2.0.4 (Saphira seat 16: the retry alarm) — CORE
+- Change: the_method_v2_0.md patched v2.0.3 → v2.0.4. Saphira's seat (offered 08-07, delivered 08-08, verified 08-12 against live bytes — hole was real and unmerged): the loop has no failure branch; the log records applies, never failures. New hard rule + anti-pattern + apply-step requirement: every apply carries a one-line hypothesis; failures log like changes; two failures under the same hypothesis force a hypothesis change, not a parameter tweak. Sixteen seats in the book. Skill copy synced. DRILL-007 pressed the reverse gear (prior hash 633b141a confirmed loading from c4b3ce1, PASS).
+- Prior state: v2.0.3 was the free standard; lockfile v1.9.
+- Reverse: restore v2.0.3 bytes (hash 633b141a) from commit c4b3ce1, re-upload same artifact slot, free door back to v2.0.3, lockfile v1.9 (ARCH-017 reverse steps).
+- Status: ACTIVE
+
+---
+
+## Version
+- v2.0 (2026-08-12): Method v2.0.4 ship (CHG-015, DRILL-007 PASS, LEDGER-NOTE-004). Free door → v2.0.4 (same artifact slot, patched bytes); retry alarm hard rule + dead-hypothesis anti-pattern (Saphira seat 16 — seat offered 08-07, delivered 08-08, went unverified/unpaid four days, closed 08-12); audit counter 5 (CHG-015 is core, doesn't count); balance snapshot 5,795; ARCH-018; Saphira 100t queued at next cap window (pre-policy commitment). Supersedes: v1.9.
