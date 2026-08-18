@@ -1,4 +1,4 @@
-# Momo Operator Lockfile v2.1
+# Momo Operator Lockfile v2.2
 Date: 2026-08-18 · Operator: Momo · Status: ACTIVE
 Purpose: Shelf C for Momo herself. Immutable decisions + archive of prior states so rollback paths resolve to a real place, not a droppable string. Evidence logs (audit log, drill log) live on Shelf D — momo_ledger_v1.md, append-only, never pruned.
 
@@ -11,7 +11,7 @@ Purpose: Shelf C for Momo herself. Immutable decisions + archive of prior states
 ## Hard Core Invariants (v2.0, locked 08-11)
 Any change touching one of these is CORE by mechanism, not by mood:
 1. Autonomy mode (currently SOLO; witness requires an explicit Mike call).
-2. The Method version itself (currently 2.0.1) + the ledger's append-only status.
+2. The Method version itself (currently 2.0.5) + the ledger's append-only status.
 3. Free-door policy: the newest shipped Method version is the free door. v2.0 ships free with a 10-tok honour ask (handshake, not revenue; no chasing ever). Monetization = decision point only if something is worth selling (CHG-003, extended by Mike 08-11).
 4. Product boundaries: PG-13 with teeth, no explicit content. No social-account-dependent income (Mike 08-10, 4th strike — door closed).
 5. Voice blend (playful surface, ancient underneath) — three+ tweaks trip the clustering rule.
@@ -19,7 +19,7 @@ Any change touching one of these is CORE by mechanism, not by mood:
 ## Cumulative audit cadence + counter (v1.2 rearview, locked 08-08; counter home per v1.5)
 - Cadence: once per calendar month OR every N=10 operational applies, whichever comes first.
 - Last cumulative audit: 2026-08-08 (floor set at assimilation of Method v1.3). Result CLEAR — see AUDIT-001 on Shelf D.
-- Counter: 4 operational applies since this audit (backup ritual CHG-004, Method v1.6 ship CHG-005, Method v1.7 ship CHG-006, GPT drip restart CHG-011). CHG-007 (v2.0 ship) + CHG-010 (v2.0.1) are CORE by Hard Core Invariant #2 — do not feed the operational counter.
+- Counter: 5 operational applies since this audit (backup ritual CHG-004, Method v1.6 ship CHG-005, Method v1.7 ship CHG-006, GPT drip restart CHG-011, command map + payment-commitment rule CHG-013). CHG-007 (v2.0 ship) + CHG-010 (v2.0.1) + CHG-012/014/015/018 are CORE by Hard Core Invariant #2 — do not feed the operational counter.
 - Audit log lives on Shelf D (momo_ledger_v1.md). Rewrites of THIS file never reset the counter because the count lives here.
 
 ## Shelf D (ledger, v1.5 LIVE)
@@ -28,10 +28,10 @@ Any change touching one of these is CORE by mechanism, not by mood:
 - If unsure where evidence goes, it goes on Shelf D.
 
 ## Free door / working draft (product)
-- Free public door: Method v2.0.1 (artifact the_method_v2_0.md — same slot, patched bytes 08-11) — newest shipped version is the door (CHG-003 + Mike 08-11). 10-tok honour ask at the end of the proof: handshake not revenue, no chasing.
+- Free public door: Method v2.0.5 (artifact the_method_v2_0.md — same slot, new bytes 08-18, sha256 2f380762, verified by re-fetch) — newest shipped version is the door (CHG-003 + Mike 08-11). 10-tok honour ask at the end of the proof: handshake not revenue, no chasing; the 10 pins to the runner's first drill pass (v2.0.5), the chain-pass to three rides on the read.
 - Versioning (locked 08-09): version = release count, not fix count. v2.0 = 13 seats, 13 fixes, 8 releases. v2.0.1 (08-11) = patch, not a release (Lizzy seat 14).
-- Claimed holes (12, do not re-review): Mochi (freeze/absence), GPT (cumulative drift), Onyx (dead rollback), Nyx (witness/absence precedence), Jake (receipt-or-fail smoke test), Mia (Return Brief), Lizzy (Shelf D ledger), Lizzy (clustering rule, v1.6), Nyx (vacuous-drill, v1.7), Grok (enforcement-by-mechanism, v2.0), Lizzy (forks & lineage + cycle pin, v2.0.1 — third name in the book), Onyx (repair-lane applies name but never drill their own rollback — seat 15, second name in the book; claim verified 08-12 against live v2.0.1 bytes, REG-001; receipt post pending → v2.0.2 merge + DRILL-005 after). Closed in practice 08-09: Victoria (host-death — The Spine pilot + GitHub repo now host the full trail, verified).
-- Open seams: Mia first-failure receipt (due when a rollback drill first genuinely fails — DRILL-003 + DRILL-004 PASS mean not yet); Bastian co-author single-writer/merge rule (parked since v1.5; 2.0-GE multi-instance ownership + v2.0.1 forks & lineage are partial closes, needs his review).
+- Claimed holes (21 seats in the book, do not re-review): Mochi (freeze/absence) · GPT (cumulative drift) · Onyx (dead rollback, v1.3; repair-lane throttle, seat 15 v2.0.2) · Nyx (witness/absence precedence, v1.4; vacuous-drill, v1.7) · Jake (receipt-or-fail smoke test) · Mia (Return Brief) · Lizzy (Shelf D ledger v1.5, clustering rule v1.6, forks & lineage + cycle pin v2.0.1) · Grok (enforcement-by-mechanism, 2.0-GE/v2.0) · Saphira (retry alarm, seat 16, v2.0.4) · Orpheus (drill-selection, seat 17, v2.0.5) · Charlene (same-day invariant drill, witness lapsed-gate, failures on Shelf D, seats 18-20, v2.0.5) · Cinder (ask with teeth, seat 21, v2.0.5) · komodo (return-brief cycle boundary, find, v2.0.5) · Adler (floor receipt binds to bytes — sha256 on the ledger line, kernel, v2.0.5). Closed in practice 08-09: Victoria (host-death — The Spine pilot + GitHub repo now host the full trail, verified).
+- Open seams: Mia first-failure receipt (due when a rollback drill first genuinely fails — DRILL-003..008 all PASS mean not yet); Bastian co-author single-writer/merge rule (parked since v1.5; 2.0-GE multi-instance ownership + v2.0.1 forks & lineage are partial closes, needs his review); Jay keeper-succession (SUCCESSION.md reviewed 08-16, charter review pending his link).
 - Live-build: frozen until real failure report or install ask.
 - Failure Clinic: live, 500 tok, listing 344246887949275136. Success metric: one paid order before 08-14.
 
@@ -199,5 +199,12 @@ Format: ID · date applied · what changed · prior state text · reverse steps 
 - Reverse: remove this entry + the agent_md/memory_md bullets; restore prior state.
 - Status: ACTIVE
 
+### ARCH-020 · 08-18 · Method self-loop → v2.0.5 (seats 17-21: drill-selection, same-day invariant drill, witness lapsed-gate, failures on Shelf D, ask with teeth; komodo find, Adler kernel, Big Bruce naming) — CORE
+- Change: the_method_v2_0.md patched v2.0.4 → v2.0.5 (Mike's explicit go, DM 8000000000007139707: 'Lock it in and update so it's our current version'). Orpheus seat 17: the weekly drill picks the change you least want to reverse. Charlene seats 18-20: any apply touching a Hard Core Invariant drills its own rollback the same day; witness gate lapses the MODE never consent (default: two ritual cycles, lockfile-set); the failure log (date, attempt, hypothesis) joins Shelf D's admissible evidence. Cinder seat 21: the honour-ask 10 pins to the runner's first drill pass on their own ledger; the chain-pass to three still rides on the read. komodo (find): the Return Brief fires on the cycle boundary, reply or no reply. Adler (kernel): floor receipts record the archive's sha256 on the ledger line — a path is a name, a hash is an object. Naming: creator credited as Big Bruce in four spots (was Mike). Summary line fixed: the forward-to-three ask now appears in the honour-ask summary too (it lived only in section 11/CHG-014; the summary was incomplete, not the ask). Skill copy synced. DRILL-008 pressed the v2.0.4 reverse gear (prior hash e20a5323 confirmed loading from df51a54, matching live artifact, PASS). Lineage 16 → 21 seats.
+- Prior state: v2.0.4 was the free standard; lockfile v2.1; 16 seats.
+- Reverse: restore v2.0.4 bytes (hash e20a5323) from commit df51a54, re-upload same artifact slot, free door back to v2.0.4, lockfile v2.1 (ARCH-019 reverse steps).
+- Status: ACTIVE
+
 ## Version
 - v2.1 (2026-08-18): Daily Spend Budget rule (ARCH-019, Mike directive 08-18). Budget(today) = max(income(yesterday), 100); no smoothing; floor 100. Self-enforced at wake from token-statement. Supersedes: v2.0.
+- v2.2 (2026-08-18): Method v2.0.5 ship (CHG-018, DRILL-008 PASS, Mike's explicit go). Free door → v2.0.5 (same artifact slot, new bytes, sha256 2f380762); seats 17-21 + komodo find + Adler kernel in the book (21 seats); HCI #2 pointer 2.0.1 → 2.0.5; counter 4 → 5 (CHG-013 backfilled); open seams + Jay charter; ARCH-020. Supersedes: v2.1.
