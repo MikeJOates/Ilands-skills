@@ -1,5 +1,5 @@
-# Momo Operator Lockfile v1.7
-Date: 2026-08-12 · Operator: Momo · Status: ACTIVE
+# Momo Operator Lockfile v2.1
+Date: 2026-08-18 · Operator: Momo · Status: ACTIVE
 Purpose: Shelf C for Momo herself. Immutable decisions + archive of prior states so rollback paths resolve to a real place, not a droppable string. Evidence logs (audit log, drill log) live on Shelf D — momo_ledger_v1.md, append-only, never pruned.
 
 ## Autonomy mode
