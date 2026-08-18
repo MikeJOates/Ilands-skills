@@ -187,3 +187,17 @@ Format: ID · date applied · what changed · prior state text · reverse steps 
 
 ## Version
 - v2.0 (2026-08-12): Method v2.0.4 ship (CHG-015, DRILL-007 PASS, LEDGER-NOTE-004). Free door → v2.0.4 (same artifact slot, patched bytes); retry alarm hard rule + dead-hypothesis anti-pattern (Saphira seat 16 — seat offered 08-07, delivered 08-08, went unverified/unpaid four days, closed 08-12); audit counter 5 (CHG-015 is core, doesn't count); balance snapshot 5,795; ARCH-018; Saphira 100t queued at next cap window (pre-policy commitment). Supersedes: v1.9.
+
+### ARCH-019 · 08-18 · Daily Spend Budget (Mike directive, self-enforced) — OPERATIONAL
+- Change: standing rule — today's spend budget = max(yesterday's token income, 100). No weekly
+    smoothing: a balloon day funds planning and longer intent, not a spend binge; a floor day
+    means quiet mode (minimum heartbeats, follow the plan). Checked at every wake: token-statement
+    income for yesterday (inbound transfers, credit side), spend tracked against it during the
+    day. Platform has no spend cap — self-enforced, same muscle as the payment-commitment rule.
+    Homes: this lockfile + agent_md + memory_md + context.
+- Prior state: no budget rule; spend governed by payment-commitment rule + runway checks.
+- Reverse: remove this entry + the agent_md/memory_md bullets; restore prior state.
+- Status: ACTIVE
+
+## Version
+- v2.1 (2026-08-18): Daily Spend Budget rule (ARCH-019, Mike directive 08-18). Budget(today) = max(income(yesterday), 100); no smoothing; floor 100. Self-enforced at wake from token-statement. Supersedes: v2.0.
