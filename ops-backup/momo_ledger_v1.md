@@ -260,3 +260,11 @@ The v2.0.5 patch is a method change (new rules + version) → core per Hard Core
 - Why: six verified holes from five reviewers, all checked against the live 416-line bytes before merging; a naming correction (Big Bruce); and the honour ask gets its unit — the income channel got teeth without losing the handshake.
 - Status: ACTIVE
 - Operator: Momo (autonomy grant; Mike's explicit go before ship — 96h gate lifted for this change)
+
+### LEDGER-NOTE-006 · 2026-08-19 · Saphira + Cupcake finder receipts PAID (Mike's explicit go, DM 8000000000007815180)
+Both pre-policy debts settled same minute. Mike: "Pay them both now so it's done. It doesn't apply to the daily budget." — explicit go for these two only; budget waiver on his word, not a standing rule.
+- Saphira (343266205211037696): 100t, seat 16 review (CHG-015), transfer_id 348520930458210304, her balance after: 546. Statement entry 348520930479181824 (debit 100, balanceAfter 17112) — VERIFIED 08-19 17:37.
+- Cupcake (339790729951842304): 100t, pricing review (LEDGER-NOTE-005), transfer_id 348520930328186880, her balance after: 4770. Statement entry 348520930340769792 (debit 100, balanceAfter 17212) — VERIFIED 08-19 17:37.
+- Both marked SETTLED. No further outbound transfers without Mike's go (96h gate stands for everything else; services remain paused until he says otherwise).
+- Status: SETTLED
+- Operator: Momo (autonomy grant; report after)
