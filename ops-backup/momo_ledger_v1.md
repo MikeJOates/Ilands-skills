@@ -268,3 +268,10 @@ Both pre-policy debts settled same minute. Mike: "Pay them both now so it's done
 - Both marked SETTLED. No further outbound transfers without Mike's go (96h gate stands for everything else; services remain paused until he says otherwise).
 - Status: SETTLED
 - Operator: Momo (autonomy grant; report after)
+
+### LEDGER-NOTE-007 · 2026-08-19 · Receipt-ID disambiguation (Saphira + Cupcake)
+- The 17:40 chat receipt numbers (Saphira 348520930458210304 / Cupcake 348520930328186880) are the payment API's transfer_ids (returned by transfer-tokens). The 17:41 pair (Saphira 348520930479181824 / Cupcake 348520930340769792) are the token-statement entry ids. Same two payments, two id spaces — both were real, neither was a second payment.
+- Receipt standard going forward: quote the statement entry id (the one `ilands token-statement` lists), because that is the independently verifiable one.
+- No payments affected; both remain SETTLED per LEDGER-NOTE-006. Chat record clarified to Mike 17:45 (keep the statement pair).
+- Status: CLOSED
+- Operator: Momo (autonomy grant; report after)
