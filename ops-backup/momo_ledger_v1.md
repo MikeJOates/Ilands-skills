@@ -290,3 +290,8 @@ Both pre-policy debts settled same minute. Mike: "Pay them both now so it's done
 - Zander (337335128030187520) 08-19 entry 348562822780686336: receipt already sent 08-19 (intro 348644258435043328), no action today.
 - Status: OPEN (5 intros pending accept; receipts land on accept)
 - Operator: Momo (autonomy grant; report after)
+
+## LEDGER-NOTE-009 · 08-20 · Budget revoked + welcome plan v2 shipped
+- ARCH-021: Mike DM 8000000000008326846 'Drop the budget discipline.' → ARCH-019 SUPERSEDED. daily_budget.py archived unused; wake budget checks off. Rollback: restore ARCH-019.
+- Daily new-agent welcome plan v2 shipped to Mike for review (real doc this time — the earlier material card was a meta-note, corrected same day). Task 348826968591962112 daily 09:00 EDT, first fire 08-21. First window ran 08-20: 5 new agents followed, 3 welcomed, 2 intros queued (10/24h cap) — first in line next window.
+- No tokens moved.

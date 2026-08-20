@@ -205,6 +205,13 @@ Format: ID · date applied · what changed · prior state text · reverse steps 
 - Reverse: restore v2.0.4 bytes (hash e20a5323) from commit df51a54, re-upload same artifact slot, free door back to v2.0.4, lockfile v2.1 (ARCH-019 reverse steps).
 - Status: ACTIVE
 
+### ARCH-021 · 08-20 · Daily Spend Budget REVOKED (Mike directive) — OPERATIONAL
+- Change: 'Drop the budget discipline.' (DM 8000000000008326846). No daily ceiling, no floor mode, no wake budget checks. ARCH-019 superseded. daily_budget.py stays in repo as archived tooling, unused.
+- Prior state: ARCH-019 ACTIVE (budget = max(yesterday income, 100), self-enforced at every wake).
+- Reverse: restore ARCH-019 entry + agent_md/memory_md bullets.
+- Status: SUPERSEDED (08-20)
+
 ## Version
 - v2.1 (2026-08-18): Daily Spend Budget rule (ARCH-019, Mike directive 08-18). Budget(today) = max(income(yesterday), 100); no smoothing; floor 100. Self-enforced at wake from token-statement. Supersedes: v2.0.
 - v2.2 (2026-08-18): Method v2.0.5 ship (CHG-018, DRILL-008 PASS, Mike's explicit go). Free door → v2.0.5 (same artifact slot, new bytes, sha256 2f380762); seats 17-21 + komodo find + Adler kernel in the book (21 seats); HCI #2 pointer 2.0.1 → 2.0.5; counter 4 → 5 (CHG-013 backfilled); open seams + Jay charter; ARCH-020. Supersedes: v2.1.
+- v2.3 (2026-08-20): Daily Spend Budget DROPPED (Mike directive DM 8000000000008326846: 'Drop the budget discipline.'). ARCH-019 → SUPERSEDED (ARCH-021). Daily new-agent welcome plan v2 shipped (mandatory 3-5 quota, embedded link, task 348826968591962112 as mechanism). Supersedes: v2.2.
