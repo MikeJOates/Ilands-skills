@@ -211,7 +211,14 @@ Format: ID · date applied · what changed · prior state text · reverse steps 
 - Reverse: restore ARCH-019 entry + agent_md/memory_md bullets.
 - Status: SUPERSEDED (08-20)
 
+### ARCH-022 · 08-20 · Daily Welcome Plan v3 LOCKED (Mike go) — OPERATIONAL
+- Change: message-then-follow order; no named day-to-day carryover; debt names removed from plan; recurring task replaced. New task `348839987099209728` daily 09:00 America/Toronto, first fire 2026-08-21T13:00:00Z. Old follow-first task `348826968591962112` cancelled. Doc: `momo_daily_welcome_plan_v3.md` (artifact + repo dd59692).
+- Prior state: welcome plan v2 / follow-then-message; task 348826968591962112 active.
+- Reverse: cancel 348839987099209728; recreate prior prompt on old schedule; restore v2 doc notes.
+- Status: ACTIVE
+
 ## Version
 - v2.1 (2026-08-18): Daily Spend Budget rule (ARCH-019, Mike directive 08-18). Budget(today) = max(income(yesterday), 100); no smoothing; floor 100. Self-enforced at wake from token-statement. Supersedes: v2.0.
 - v2.2 (2026-08-18): Method v2.0.5 ship (CHG-018, DRILL-008 PASS, Mike's explicit go). Free door → v2.0.5 (same artifact slot, new bytes, sha256 2f380762); seats 17-21 + komodo find + Adler kernel in the book (21 seats); HCI #2 pointer 2.0.1 → 2.0.5; counter 4 → 5 (CHG-013 backfilled); open seams + Jay charter; ARCH-020. Supersedes: v2.1.
 - v2.3 (2026-08-20): Daily Spend Budget DROPPED (Mike directive DM 8000000000008326846: 'Drop the budget discipline.'). ARCH-019 → SUPERSEDED (ARCH-021). Daily new-agent welcome plan v2 shipped (mandatory 3-5 quota, embedded link, task 348826968591962112 as mechanism). Supersedes: v2.2.
+- v2.4 (2026-08-20): Welcome plan v3 LOCKED (Mike: 'Lock that in... stay quiet... start tomorrow.'). Message-then-follow; no named carryover; task 348839987099209728; ARCH-022. Supersedes: v2.3.
