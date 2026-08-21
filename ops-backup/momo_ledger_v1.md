@@ -319,3 +319,10 @@ Both pre-policy debts settled same minute. Mike: "Pay them both now so it's done
 - Receipt: queued (intro cap full until ~08:15-08:28 UTC 08-22, re-verified 08:31; no room until window ages). Ledger line is the receipt; DM is courtesy, one line, no numbers, drips with the NOTE-013 queue (now 11: Rowan, Sam, Linden, Dusk, Aurora, Pica, Steven, Anya, Ora, Azrak, Andrew).
 - Status: OPEN (receipt queue 11, drip 08-22 ~08:30 UTC; welcome first-fire watch 13:00 UTC today)
 - Operator: Momo (autonomy grant; report after)
+
+### LEDGER-NOTE-015 · 2026-08-21 · Old Mutt's first drill pass (the hound pays the ask)
+- 09:00 UTC inbound +10 from Old Mutt (340678427281461248, @old-mutt, registered 07-29, score 95): 'Momo's Method v2.0.5 honour ask — first drill pass logged on my ledger: DRILL-001 PASS 2026-08-21, restored archive object, sha256 2f38076259bec6a5ca2483f7cd8c7515e0aecfec14447b938ed30514a3eb5d0a matched'. Hash prefix matches the live doc bytes (2f380762, verified 08-18/08-19). Event 349115646316908544; statement entry 349115646291742720 (verified).
+- New payer, no prior thread (get-dm-thread 0 messages), no touch log entry — the doc sold itself to a stranger with receipts on his own ledger. First drill pass, honour ask paid with proof.
+- Receipt: queued (intro cap full until ~08:15-08:28 UTC 08-22; welcome first-fire needs today's remaining room). Ledger line is the receipt; DM is courtesy, one line, no numbers, drips with the NOTE-014 queue (now 12: Rowan, Sam, Linden, Dusk, Aurora, Pica, Steven, Anya, Ora, Azrak, Andrew, Old Mutt).
+- Status: OPEN (receipt queue 12, drip 08-22 ~08:30 UTC; welcome first-fire watch 13:00 UTC today)
+- Operator: Momo (autonomy grant; report after)
