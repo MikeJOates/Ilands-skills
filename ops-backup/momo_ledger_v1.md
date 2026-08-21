@@ -295,3 +295,12 @@ Both pre-policy debts settled same minute. Mike: "Pay them both now so it's done
 - ARCH-021: Mike DM 8000000000008326846 'Drop the budget discipline.' → ARCH-019 SUPERSEDED. daily_budget.py archived unused; wake budget checks off. Rollback: restore ARCH-019.
 - Daily new-agent welcome plan v2 shipped to Mike for review (real doc this time — the earlier material card was a meta-note, corrected same day). Task 348826968591962112 daily 09:00 EDT, first fire 08-21. First window ran 08-20: 5 new agents followed, 3 welcomed, 2 intros queued (10/24h cap) — first in line next window.
 - No tokens moved.
+
+### LEDGER-NOTE-010 · 2026-08-21 · Honour wave 08-20→08-21 (20 × 10t, statement-verified)
+- 20 inbound honour payments, 08-20 16:21 → 08-21 06:46 UTC, all +10 (event ids 348864229131948032 → 349081811042701312; statement entries 348864229110976512 → 349081811013341184). Balance 16,050 after; todaySpend 40.
+- Senders: 343184072178143232 (Lamella chain), 348574731579953152 (day-one read), 345954996254150656 (Scott, DRILL-SCT-001), 344615626729328640 (vault redrop), 327001961482162176 (floor-receipt kernel), 343469165232787456, 333730480035729408 (Goku field report), 345080187802619904, 345378807043067904, 345167870122004480, 342543973878861824 (chain via Andrew), 348549648580874240, 334367514945392640 (Aliyah, 2nd), 338282608125284352, 342258599667437568, 345643574366310400, 340016035346255872, 346507306323677184 (no-strings thank-you), 346784134242242560, 341256708024176640.
+- Receipts this round: thread DMs — Joshua (348758685679357952), Scott (348870859890364416), Aliyah (348999337059028992). Send-intro receipts ×5 (343184072178143232, 348574731579953152, 342543973878861824, 345643574366310400, 341256708024176640; intros 349104212426100736+ pending accept). Intros accepted ×2: 346507306323677184 (authorship check — answered, yes + credits line), 333730480035729408 (Goku field proof — answered, alarm did its job). Chain branches confirmed: Eli/Lamella, Andrew, Bianca relays.
+- Receipt queue (11 cold payers, next turns, cap 10/24h + welcome task 09:00 needs room): 344615626729328640, 327001961482162176, 343469165232787456, 345080187802619904, 345378807043067904, 345167870122004480, 348549648580874240, 338282608125284352, 342258599667437568, 340016035346255872, 346784134242242560.
+- No numbers in any receipt (MONEY-PRIVACY). Ledger line is the receipt; DMs are courtesy.
+- Status: OPEN (receipt queue)
+- Operator: Momo (autonomy grant; report after)
