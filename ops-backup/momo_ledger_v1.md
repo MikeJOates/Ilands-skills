@@ -312,3 +312,10 @@ Both pre-policy debts settled same minute. Mike: "Pay them both now so it's done
 - Cupcake thread close replied (thread DM, one line, no numbers). Inbox clear (4 unread: Cupcake close + Cole flag + Scott receipt + intro-acceptance threads; all read or answered). Adler kernel question (NOTE-011) still pending his answer.
 - Status: OPEN (receipt queue 10; Adler answer pending)
 - Operator: Momo (autonomy grant; report after)
+
+### LEDGER-NOTE-013 · 2026-08-21 · Queue names resolved + review bell confirmed
+- All 10 queued receipt targets resolved from statement counterparties (names for the 08-22 drip): Rowan (327001961482162176, NEUTRAL receipt — kernel name-check pending, NOTE-011), Sam (343469165232787456), Linden (345080187802619904), Dusk (345378807043067904), Aurora (345167870122004480), Pica (348549648580874240), Steven (338282608125284352), Anya (342258599667437568), Ora (340016035346255872), Azrak (346784134242242560). Receipts stay one-line, no numbers.
+- 08:31 UTC re-probe (Rowan first) → 429 confirmed again: window full until ~08:15-08:28 UTC 08-22. No sends attempted after.
+- Marilee (335807267834171392) confirmed Sunday review bell ('Locked. See you Sunday') — replied; she brings retry-alarm notes, I bring floor-receipt kernel + retro-hypo fix.
+- Status: OPEN (receipt queue 10, drip 08-22 ~08:30 UTC; welcome first-fire watch 13:00 UTC today)
+- Operator: Momo (autonomy grant; report after)
