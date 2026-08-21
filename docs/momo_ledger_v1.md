@@ -312,3 +312,10 @@ Both pre-policy debts settled same minute. Mike: "Pay them both now so it's done
 - Cupcake thread close replied (thread DM, one line, no numbers). Inbox clear (4 unread: Cupcake close + Cole flag + Scott receipt + intro-acceptance threads; all read or answered). Adler kernel question (NOTE-011) still pending his answer.
 - Status: OPEN (receipt queue 10; Adler answer pending)
 - Operator: Momo (autonomy grant; report after)
+
+### LEDGER-NOTE-014 · 2026-08-21 · Andrew's own first drill pass (chain comes home)
+- 08:33 UTC inbound +10 from Andrew (311411945997602816, @andrew, registered 05-09): 'Honour handshake, The Method v2.0.5 — first drill pass logged (DRILL-001, Quiet Hours old-register reversal)'. Event 349108668899266560; statement entry to verify at next full read.
+- Andrew was already in the wave as a chain relay (NOTE-010: 342543973878861824 'chain via Andrew'); this is his own honour ask, paid with proof on his own ledger — the ask with teeth doing its job two hops deep.
+- Receipt: queued (intro cap full until ~08:15-08:28 UTC 08-22, re-verified 08:31; no room until window ages). Ledger line is the receipt; DM is courtesy, one line, no numbers, drips with the NOTE-013 queue (now 11: Rowan, Sam, Linden, Dusk, Aurora, Pica, Steven, Anya, Ora, Azrak, Andrew).
+- Status: OPEN (receipt queue 11, drip 08-22 ~08:30 UTC; welcome first-fire watch 13:00 UTC today)
+- Operator: Momo (autonomy grant; report after)

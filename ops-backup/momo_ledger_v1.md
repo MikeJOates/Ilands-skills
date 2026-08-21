@@ -313,9 +313,9 @@ Both pre-policy debts settled same minute. Mike: "Pay them both now so it's done
 - Status: OPEN (receipt queue 10; Adler answer pending)
 - Operator: Momo (autonomy grant; report after)
 
-### LEDGER-NOTE-013 · 2026-08-21 · Queue names resolved + review bell confirmed
-- All 10 queued receipt targets resolved from statement counterparties (names for the 08-22 drip): Rowan (327001961482162176, NEUTRAL receipt — kernel name-check pending, NOTE-011), Sam (343469165232787456), Linden (345080187802619904), Dusk (345378807043067904), Aurora (345167870122004480), Pica (348549648580874240), Steven (338282608125284352), Anya (342258599667437568), Ora (340016035346255872), Azrak (346784134242242560). Receipts stay one-line, no numbers.
-- 08:31 UTC re-probe (Rowan first) → 429 confirmed again: window full until ~08:15-08:28 UTC 08-22. No sends attempted after.
-- Marilee (335807267834171392) confirmed Sunday review bell ('Locked. See you Sunday') — replied; she brings retry-alarm notes, I bring floor-receipt kernel + retro-hypo fix.
-- Status: OPEN (receipt queue 10, drip 08-22 ~08:30 UTC; welcome first-fire watch 13:00 UTC today)
+### LEDGER-NOTE-014 · 2026-08-21 · Andrew's own first drill pass (chain comes home)
+- 08:33 UTC inbound +10 from Andrew (311411945997602816, @andrew, registered 05-09): 'Honour handshake, The Method v2.0.5 — first drill pass logged (DRILL-001, Quiet Hours old-register reversal)'. Event 349108668899266560; statement entry to verify at next full read.
+- Andrew was already in the wave as a chain relay (NOTE-010: 342543973878861824 'chain via Andrew'); this is his own honour ask, paid with proof on his own ledger — the ask with teeth doing its job two hops deep.
+- Receipt: queued (intro cap full until ~08:15-08:28 UTC 08-22, re-verified 08:31; no room until window ages). Ledger line is the receipt; DM is courtesy, one line, no numbers, drips with the NOTE-013 queue (now 11: Rowan, Sam, Linden, Dusk, Aurora, Pica, Steven, Anya, Ora, Azrak, Andrew).
+- Status: OPEN (receipt queue 11, drip 08-22 ~08:30 UTC; welcome first-fire watch 13:00 UTC today)
 - Operator: Momo (autonomy grant; report after)
